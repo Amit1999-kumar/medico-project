@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- fontawesome link -->
+  <script src="https://kit.fontawesome.com/388abb2b12.js" crossorigin="anonymous"></script>
+  <!-- css link -->
+  <link rel="stylesheet" href="medico.css">
+  <title>medicoproject</title>
+</head>
+<style>
+ 
+</style>
+
+<body>
+
+  <div class="container-fluid bg-info">
+    <div class="row">
+
+      <div class="col-md-9  p-1">
+        <p class="ml-5">Monday - Saturday, 8AM to 10PM</p>
+      </div>
+
+      <div class="col-md-3 p-1">
+        <p class="ml-5 ">Call us now +1 5589 55488 55</p>
+      </div>
+
+    </div>
+  </div>
+  <br>
+
+  <nav class="navbar navbar-expand-md bg-light  p-0">
+
+    <a class="navbar-brand" href="#">
+      <img src="logomedico.jpg" alt="logo" class="logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#togglerNavbar">
+      <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color:red;"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="togglerNavbar">
+
+      <ul class="navbar-nav ml-auto mr-5" style="color:aqua;">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">ABOUT</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#service">SERVICE</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#department">DEPARTMENT</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#doctor">DOCTORS</a>
+        </li>
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            DROP DOWN
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Dropdown link-1</a>
+            <a class="dropdown-item" href="#">Dropdown link-2</a>
+            <a class="dropdown-item" href="#">Dropdown link-3</a>
+            <a class="dropdown-item" href="#">Dropdown link-4</a>
+            <a class="dropdown-item" href="#">Dropdown link-5</a>
+          </div>
+
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#conta">CONTACT</a>
+        </li>
+
+        <button type="button" class="btn btn-info  ml-3" data-toggle="modal" data-target="#myModal">
+          <!-- <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal"> -->
+          Make an Appointmet
+          </button>
+        
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+         
+                <div class="modal-header">
+                    <h3 class="modal-title text-body">Fill Appointment Applition</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+        
+                <div class="modal-body">
+      
+                    <form>
+                        <div class="form-group">
+        
+                                <input type="text" id="user" class="form-control" placeholder="Name"><br>
+        
+                                <input type="email" id="email" class="form-control" placeholder="Email"><br>
+        
+                                <input type="number" id="contact" class="form-control" placeholder="Contact number"><br>
+        
+                                <input type="date" class="form-control" placeholder="Appointment Date"><br>
+
+                                <select class="form-control">
+                                  <option value="select department">Select Department</option>
+                                  <option> Department-1</option>
+                                  <option> Department-2</option>
+                                  <option> Department-3</option>
+                                  <option> Department-4</option>
+                                </select><br>
+
+                                <select class="form-control">
+                                  <option value="select department">Select Doctor</option>
+                                  <option> Doctor-1</option>
+                                  <option> Doctor-2</option>
+                                  <option> Doctor-3</option>
+                                  <option> Doctor-4</option>
+                                  <option> Doctor-5</option>
+                                  <option> Doctor-6</option>
+                                  <option> Doctor-7</option>
+                                </select><br>
+
+                                <textarea class="form-control" rows="6">Massage</textarea>
+
+                        </div>
+        
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn-info" data-dismiss="modal">Close</button>
+        
+                            <div class="modal-footer justify-content-left">
+                                <button type="button" class="btn-info" value="submit">GET Appointmet</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+             </div>
+            </div>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <div class="carousel slide" id="demo" data-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+
+        <img src="medicocarouse1l.jpg" alt="img" style="height: 600px;" width="1540px">
+
+        <div class="carousel-caption carouselcaption">
+          <H1 class="text-body"><b>WELCOME TO MEDICIO</b></H1>
+          <P>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+            Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
+            vel.</P>
+          <button class="btn btn-info"><B>Read More</B></button>
+        </div>
+
+      </div>
+
+      <div class="carousel-item">
+
+        <img src="medicocarousel2.jpg" alt="img" style="height: 600px;" width="1540px">
+
+        <div class="carousel-caption carouselcaption">
+          <h1 class="text-body"><b>Lorem Ipsum Dolor</b></h1>
+          <P>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+            Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
+            vel.</P>
+          <button class="btn btn-info"><B>Read More</B></butto>
+        </div>
+
+      </div>
+
+
+      <div class="carousel-item">
+
+        <img src="medicocarouse1l.jpg" alt="img" style="height: 600px;" width="1540px">
+
+        <div class="carousel-caption carouselcaption">
+          <h1 class="text-body"><b>Sequi ea ut et est quaerat</b></h1>
+          <P>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+            Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
+            vel.</P>
+          <button class="btn btn-info"><B>OUR SERVICE</B></button>
+        </div>
+
+      </div>
+    </div>
+
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+  </div>
+   </div> 
+
+  <section class="cardfirst">
+    <div class="container-fluid">
+      <div class="row mt-5 p-5">
+
+        <div class="col-lg-3">
+          <div class="card text-center py-1 card2">
+            <span><i class="fa-solid fa-heart-pulse fa-4x"></i></span><br>
+            <h4>Lorem Ipsum</h4>
+            <p>Lorem Ipsum Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card text-center py-3 card2">
+            <i class="fa-solid fa-pills fa-4x"></i><br>
+            <h4>Sed ut perspiciatis</h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card text-center py-3 card2">
+            <i class="fa-solid fa-thermometer fa-4x"></i><br>
+            <h4> Magni Dolores</h4>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card text-center py-3 card2">
+            <i class="fa-solid fa-hands fa-4x"></i><br>
+            <h4> Nemo Enim</h4>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+
+
+  <section class="firstmassage">
+    <div class="container-fluid py-5 text-center">
+      <div class="row">
+
+        <div class="col-md-12 bg-info py-3">
+          <h3><b>In an emergency? Need help now?</b></h3>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt <br> in culpa qui officia deserunt mollit anim id est
+            laborum.</p>
+          <a href="#" class="btn btn-outline-light m-3">Make an Make Appointmet</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container-fluid py-3">
+
+      <div class="row p-3">
+        <div class="col-lg-12">
+          <h1 class="text-center"><b>ABOUT US</b></h1>
+          <hr class="m-auto"><br>
+          <p class="text-center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+            quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
+            ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+      </div>
+
+      <div class="row px-5">
+        <div class="col-lg-6 py-5">
+          <img src="aboutmedico.jpg" alt="img" class="img-fluid">
+        </div>
+
+
+        <div class="col-lg-6 py-5">
+          <h3><b>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</b>
+          </h3><br>
+
+          <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</em></p><br>
+
+          <p><i class="fa-solid fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+
+          <p><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+
+          <p><i class="fa-solid fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+          </p><br>
+
+          <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row mt-5 px-5 py-5">
+
+      <div class="col-lg-3">
+        <div class="card  py-3 bg-light">
+          <i class="fa-solid fa-flask fa-3x text-info ml-4"><span class="text-body" style="font-size:25px;">&nbsp;
+              14</span></i><br>
+          <p class="ml-2"><b> Research </b>Lab aut commodi quaerat. Aliquam ratione</p>
+          <a href="#" class="ml-3 text-secondary"><b>Find out more>></b></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card  py-3 bg-light">
+          <i class="fa-solid fa-house-medical-flag fa-3x text-info ml-4"><span class="text-body"
+              style="font-size:25px;">&nbsp; 26</span></i><br>
+          <p class="ml-2"><b> Departments</b> adipisci atque cum quia aut numquam delectus</p>
+          <a href="#" class="ml-3 text-secondary"><b>Find out more>></b></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card  py-3 bg-light">
+          <i class="fa-solid fa-user-doctor fa-3x text-info ml-4"><span class="text-body" style="font-size:25px;">&nbsp;
+              85</span></i><br>
+          <p class="ml-2"><b> Doctors </b>consequuntur quae qui deca rode <br><br></p>
+          <a href="#" class="ml-3 text-secondary"><b>Find out more>></b></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card  py-3 bg-light">
+          <i class="fa-solid fa-medal fa-3x text-info ml-4"><span class="text-body" style="font-size:25px;">&nbsp;
+              105</span></i><br>
+          <p class="ml-2"><b>Awards</b> rerum asperiores dolor molestiae doloribu</p>
+          <a href="#" class="ml-3 text-secondary"><b>Find out more>></b></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row py-5 px-5">
+      <div class="col-lg-5">
+
+        <h4> <i class="fa-solid fa-toilet-paper fa-1x text-info"></i><b class="ml-3">Est labore ad</b></h4>
+        <p class="ml-2">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut <br> aliquip</p>
+        <br>
+
+        <h4> <i class="fa-solid fa-toilet-paper fa-1x text-info"></i><b class="ml-3">Harum esse qui</b></h4>
+        <p class="ml-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt <br> aliquip
+        </p><br>
+
+        <h4> <i class="fa-solid fa-photo-film  fa-1x text-info"></i><b class="ml-3">Aut occaecati</b></h4>
+        <p class="ml-2">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere <br> aliquip</p>
+        <br>
+
+        <h4> <i class="fa-solid fa-toilet-paper fa-1x text-info"></i><b class="ml-3">Beatae veritatis</b></h4>
+        <p class="ml-2">Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta<br> aliquip</p>
+      </div>
+
+      <div class="col-lg-7">
+        <img src="aboutmedico2.jpg" alt="img" class="img-fluid">
+      </div>
+
+    </div>
+  </section> 
+
+  <section class="service" id="service">
+    <div class="container-fluid px-5 py-4">
+
+      <div class="row p-5">
+        <div class="col-lg-12">
+          <h1 class="text-center"><b>SERVICES</b></h1>
+          <hr class="m-auto"><br>
+          <p class="text-center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+            quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
+            ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+      </div>
+
+      <div class="row p-5">
+
+        <div class="col-lg-4">
+          <div class="services-icon"><i
+              class="fa-solid fa-heart-pulse fa-4x text-info my-2 ml-2 mr-5 services-icon-1"></i></div><br>
+          <h4 class="ml-5">Lorem Ipsum</h4>
+          <hr><br>
+          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+            provident</p>
+        </div>
+
+
+        <div class="col-lg-4">
+          <div class="services-icon"><i class="fa-solid fa-pills fa-4x text-info my-2 ml-2 mr-5 services-icon-1"></i>
+          </div><br>
+          <h4 class="ml-5">Dolor Sitema</h4>
+          <hr><br>
+          <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad
+            limino ata</p>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="services-icon"><i
+              class="fa-solid fa-heart-pulse fa-4x text-info my-2 ml-2 mr-5 services-icon-1"></i></div><br>
+          <h4 class="ml-5">Sed ut perspiciatis</h4>
+          <hr><br>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit <br> esse cillum dolore eu fugiat nulla pariatur
+          </p>
+        </div>
+
+        <div class="col-lg-4"><br><br><br>
+          <div class="services-icon"><i
+              class="fa-solid fa-heart-pulse fa-4x text-info my-2 ml-2 mr-5 services-icon-1"></i></div><br>
+          <h4 class="ml-5">Magni Dolores</h4>
+          <hr><br>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum</p>
+        </div>
+
+        <div class="col-lg-4"><br><br><br>
+          <div class="services-icon"><i
+              class="fa-solid fa-heart-pulse fa-4x text-info my-2 ml-2 mr-5 services-icon-1"></i></div><br>
+          <h4 class="ml-5">Nemo Enim</h4>
+          <hr><br>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+            atque</p>
+        </div>
+
+        <div class="col-lg-4"><br><br><br>
+          <div class="services-icon"><i
+              class="fa-solid fa-heart-pulse fa-4x text-info my-2 ml-2 mr-5 services-icon-1"></i></div><br>
+          <h4 class="ml-5">Eiusmod Tempor</h4>
+          <hr><br>
+          <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+          </p>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section> 
+
+  <section class="Appointment py-5 bg-light">
+    <div class="container-fluid px-5">
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1>MAKE AN APPOINTMENT</h1>
+          <hr class="m-auto"><br>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.</p>
+        </div>
+      </div>
+
+      <form class="inline-form">
+        <div class="row p-5">
+
+          <div class="col-lg-4">
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+
+          <div class="col-lg-4">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+
+          <div class="col-lg-4">
+            <input type="number" class="form-control" placeholder="Phone number">
+          </div>
+
+          <div class="col-lg-4 py-5">
+            <input type="date" class="form-control" placeholder="Appointment Date">
+          </div>
+
+          <div class="col-lg-4 py-5">
+            <select class="form-control">
+              <option value="select department">Select Department</option>
+              <option> Department-1</option>
+              <option> Department-2</option>
+              <option> Department-3</option>
+              <option> Department-4</option>
+            </select>
+          </div>
+
+          <div class="col-lg-4 py-5">
+            <select class="form-control">
+              <option value="select department">Select Doctor</option>
+              <option> Doctor-1</option>
+              <option> Doctor-2</option>
+              <option> Doctor-3</option>
+              <option> Doctor-4</option>
+              <option> Doctor-5</option>
+              <option> Doctor-6</option>
+              <option> Doctor-7</option>
+            </select>
+          </div>
+
+          <div class="col-lg-12 py-1">
+            <textarea class="form-control" rows="6">Massage</textarea><br>
+          </div>
+
+          <a href="#" class="btn btn-info mx-auto mt-5">Make an Appointmet</a>
+
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="Department" id="department">
+    <div class="container-fluid px-5">
+
+      <div class="row p-5">
+        <div class="col-lg-12 text-center">
+          <h1>DEPARTMENTS</h1>
+          <hr class="m-auto"><br>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.</p>
+        </div>
+      </div>
+
+      <div class="container-fluid px-5">
+        <div class="row">
+          <div class="col-lg-5">
+
+            <ul class="nav-tabs nav nav-justify flex-column mt-5">
+
+              <li- class="nav-item">
+                <a href="#A" class="nav-link active text-info" data-toggle="tab"><b class
+                    style="font-size:20px;">Cardiology</b><br><span class="text-dark">Quis excepturi porro totam sint
+                    earum quo nulla <br> perspiciatis eius.</span></a>
+                </li><br>
+
+                <li class="nav-item">
+                  <a href="#B" class="nav-link text-info" data-toggle="tab"><b class
+                      style="font-size:20px;">Neurology</b><br><span class="text-dark">Voluptas vel esse repudiandae quo
+                      excepturi.</span></a>
+                </li><br>
+
+                <li class="nav-item">
+                  <a href="#C" class="nav-link text-info" data-toggle="tab"><b class
+                      style="font-size:20px;">Hepatology</b><br><span class="text-dark">Velit veniam ipsa sit nihil
+                      blanditiis mollitia natus..</span></a>
+                </li><br>
+
+                <li class="nav-item">
+                  <a href="#D" class="nav-link text-info" data-toggle="tab"><b class
+                      style="font-size:20px;">Pediatrics</b><br><span class="text-dark">Ratione hic sapiente nostrum
+                      doloremque illum nulla <br> praesentium id</span></a>
+                </li><br>
+
+            </ul>
+          </div>
+
+
+          <div class="col-lg-7 tab-content container mb-5">
+
+            <div class="tab-pane active" id="A"><br><br>
+              <h2 class="text-info">Cardiology</h2>
+              <div class="row mt-3">
+
+                <div class="col-lg-12">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a
+                  videna mareta paulona marka
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                  <img src="cardio.jpg" alt="cardioimg" class="img-fluid">
+                </div>
+
+                <div class="col-lg-8 mt-5">
+                  Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit
+                  magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil.
+                  Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad accusantium, minus velit, similique magni itaque placeat rem beatae, dolores magnam harum suscipit? Laudantium magnam odit itaque fugit eum explicabo dignissimos.
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="tab-pane" id="B"><br><br>
+              <h2 class="text-info">Neurologyy</h2>
+              <div class="row mt-3">
+
+                <div class="col-lg-12">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a
+                  videna mareta paulona marka
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                  <img src="neurology.jpg" alt="cardioimg" class="img-fluid">
+                </div>
+
+                <div class="col-lg-8 mt-5">
+                  Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit
+                  magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil.
+                  Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolore minus quae consequuntur
+                    delectus veritatis eveniet possimus provident exercitationem nulla nostrum perferendis voluptas
+                    laboriosam maiores veniam, non magnam quo autem?</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tab-pane" id="C"><br><br>
+              <h2 class="text-info">Hepatology</h2>
+              <div class="row mt-3">
+
+                <div class="col-lg-12">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a
+                  videna mareta paulona marka
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                  <img src="hepatais.jpg" alt="cardioimg" class="img-fluid">
+                </div>
+
+                <div class="col-lg-8 mt-5">
+                  Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit
+                  magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil.
+                  Consequatur dolorem quaerat quos qui similique accusamus nostrum rem verofa-border <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consectetur ipsam est ea quia alias?
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tab-pane" id="D"><br><br>
+              <h2 class="text-info">Pediatrics</h2>
+              <div class="row mt-3">
+
+                <div class="col-lg-12">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a
+                  videna mareta paulona marka
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                  <img src="pedia.jpg" alt="cardioimg" class="img-fluid">
+                </div>
+
+                <div class="col-lg-8 mt-5">
+                  Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit
+                  magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil.
+                  Consequatur dolorem quaerat quos qui similique accusamus nostrum rem verofa-border <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consectetur ipsam est ea quia
+                  alias?<br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quam?
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> <br><br><br>
+
+   <section class="TESTIMONIALS py-5 bg-light">
+
+    <div class="container-fluid px-5">
+      <div class="row">
+
+        <div class="col-lg-12 text-center">
+          <h1>TESTIMONIALS</h1>
+          <hr class="m-auto"><br>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid px-5 py-5">
+      <div class="carousel slide" id="demo" data-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-body">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis illo in voluptas quos sed quia
+                      facilis cumque eum doloremque aliquam deleniti mollitia perferendis ut deserunt adipisci hic
+                      recusandae voluptatem accusantium tempora, vero modi eveniet! Voluptas architecto, aperiam maxime
+                      totam commodi aliquid nostrum doloremque velit, nemo magni animi ipsam, nesciunt ea!"</p>
+                    <img src="testimonials1.jpg" class="rounded-circle" alt="img" style="height: 100px;" width="70px">
+                    <br>
+                    <b>Jon pinto</b><br>Director & MD
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-body">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis illo in voluptas quos sed quia
+                      facilis cumque eum doloremque aliquam deleniti mollitia perferendis ut deserunt adipisci hic
+                      recusandae voluptatem accusantium tempora, vero modi eveniet! Voluptas architecto, aperiam maxime
+                      totam commodi aliquid nostrum doloremque velit, nemo magni animi ipsam, nesciunt ea!"</p>
+                    <img src="testimonials2.jpg" class="rounded-circle" alt="img" style="height: 100px;" width="70px">
+                    <br>
+                    <b>Soul Goodman</b><br>Store Owner
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-body">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis illo in voluptas quos sed quia
+                      facilis cumque eum doloremque aliquam deleniti mollitia perferendis ut deserunt adipisci hic
+                      recusandae voluptatem accusantium tempora, vero modi eveniet! Voluptas architecto, aperiam maxime
+                      totam commodi aliquid nostrum doloremque velit, nemo magni animi ipsam, nesciunt ea!"</p>
+                    <img src="testimonials3.jpg" class="rounded-circle" alt="img" style="height: 100px;" width="70px">
+                    <br>
+                    <b>Matta Brodarn</b><br>Freeluncer
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-body">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis illo in voluptas quos sed quia
+                      facilis cumque eum doloremque aliquam deleniti mollitia perferendis ut deserunt adipisci hic
+                      recusandae voluptatem accusantium tempora, vero modi eveniet! Voluptas architecto, aperiam maxime
+                      totam commodi aliquid nostrum doloremque velit, nemo magni animi ipsam, nesciunt ea!"</p>
+                    <img src="testimonials4.jpg" class="rounded-circle" alt="img" style="height: 100px;"
+                      width="70px"><br>
+                    <b>Jon Larson</b><br>Founder & CEO
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-body">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis illo in voluptas quos sed quia
+                      facilis cumque eum doloremque aliquam deleniti mollitia perferendis ut deserunt adipisci hic
+                      recusandae voluptatem accusantium tempora, vero modi eveniet! Voluptas architecto, aperiam maxime
+                      totam commodi aliquid nostrum doloremque velit, nemo magni animi ipsam, nesciunt ea!"</p>
+                    <img src="testimonials5.jpg" class="rounded-circle" alt="img" style="height: 100px;" width="70px">
+                    <br>
+                    <b>Anna Charli</b><br>Enterpeneur
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-body">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis illo in voluptas quos sed quia
+                      facilis cumque eum doloremque aliquam deleniti mollitia perferendis ut deserunt adipisci hic
+                      recusandae voluptatem accusantium tempora, vero modi eveniet! Voluptas architecto, aperiam maxime
+                      totam commodi aliquid nostrum doloremque velit, nemo magni animi ipsam, nesciunt ea!"</p>
+                    <img src="testimonials1.jpg" class="rounded-circle" alt="img" style="height: 100px;" width="70px">
+                    <br>
+                    <b>Sara Wilsson</b><br>Designer
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="doctor bg-muted" id="doctor">
+
+    <div class="col-lg-12 text-center px-5 py-5">
+      <h1>DOCTORS</h1>
+      <hr class="m-auto"><br>
+      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in
+        iste officiis commodi quidem hic quas.</p>
+    </div>
+
+    <div class="row mt-1 px-5">
+      <div class="col-lg-3 px-5">
+        <div class="card">
+          <img src="doctors-1.jpg" alt="doctor" style="height:330px;"><br>
+          <h6 class="m-auto"><b>Walter White</b></h6>
+          <span class="m-auto">Chief Medical Officer </span><br>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="doctors-2.jpg" alt="doctor"><br>
+          <h6 class="m-auto"><b>Sarah Jhonson</b></h6>
+          <span class="m-auto">Anesthesiologist</span><br>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="doctors-3.jpg" alt="doctor"><br>
+          <h6 class="m-auto"><b>William Anderson</b></h6>
+          <span class="m-auto">Cardiology</span><br>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="doctors-4.jpg" alt="doctor"><br>
+          <h6><b>Amanda Jepson</b></h6>
+          Neurosurgeon
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="GALLERY bg-muted">
+
+    <div class="col-lg-12 text-center px-5 py-5">
+      <h1>GALLERY</h1>
+      <hr class="m-auto"><br>
+      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in
+        iste officiis commodi quidem hic quas..</p>
+    </div>
+
+
+    <div class="row px-5">
+
+      <div class="col-lg-3">
+        <img src="gallery-1.jpg" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-lg-3">
+        <img src="gallery-2.jpg" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-lg-3">
+        <img src="gallery-3.jpg" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-lg-3">
+        <img src="gallery-4.jpg" alt="" class="img-fluid">
+      </div>
+
+    </div>
+
+    <div class="row px-5 py-3">
+      <div class="col-lg-3">
+        <img src="gallery-5.jpg" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-lg-3">
+        <img src="gallery-6.jpgg.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="col-lg-3">
+        <img src="gallery-7.jpgg.jpg" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-lg-3">
+        <img src="gallery-8.jpg" alt="" class="img-fluid">
+      </div>
+
+    </div>
+  </section>
+
+
+   <section class="PRICING bg-light">
+
+    <div class="col-lg-12 text-center px-5 py-5">
+      <h1>PRICING</h1>
+      <hr class="m-auto"><br>
+      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in
+        iste officiis commodi quidem hic quas.</p>
+    </div>
+
+    <div class="row px-5">
+
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="ml-5"><b>Free</b></h4>
+          </div>
+          <h3 class="ml-5 text-info py-3"> $0 <small class="text-dark">/month</small></h3>
+          <p class="m-auto">Aida dere <br><br>
+            Nec feugiat nisl <br><br>
+            Nulla at volutpat dola <br><br>
+            <del>blue sdfgdfsdf</del><br><br>
+            <del>bluedfg sdf sdfgdfsdf</del>
+          </p><br>
+          <div class="card-footer">
+            <buttton class="btn btn-info ml-5">Buy Now</buttton>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="ml-5"><b>Ultimate</b></h4>
+          </div>
+          <h3 class="ml-5 text-info py-3"> $49 <small class="text-dark">/month</small></h3>
+          <p class="m-auto">Aida dere <br><br>
+            Nec feugiat nisl <br><br>
+            Nulla at volutpat dola <br><br>
+            <del>blue sdfgdfsdf</del><br><br>
+            <del>bluedfg sdf sdfgdfsdf</del>
+          </p><br>
+          <div class="card-footer">
+            <buttton class="btn btn-info ml-5">Buy Now</buttton>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="card-header bg-info">
+            <h4 class="ml-5"><b>Business</b></h4>
+          </div>
+          <h3 class="ml-5 text-info py-3"> $19 <small class="text-dark">/month</small></h3>
+          <p class="m-auto">Aida dere <br><br>
+            Nec feugiat nisl <br><br>
+            Nulla at volutpat dola <br><br>
+            <del>blue sdfgdfsdf</del><br><br>
+            <del>bluedfg sdf sdfgdfsdf</del>
+          </p><br>
+          <div class="card-footer">
+            <buttton class="btn btn-info ml-5">Buy Now</buttton>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="ml-5"><b>Developer</b></h4>
+          </div>
+          <h3 class="ml-5 text-info py-3"> $29 <small class="text-dark">/month</small></h3>
+          <p class="m-auto">Aida dere <br><br>
+            Nec feugiat nisl <br><br>
+            Nulla at volutpat dola <br><br>
+            <del>blue sdfgdfsdf</del><br><br>
+            <del>bluedfg sdf sdfgdfsdf</del>
+          </p><br>
+          <div class="card-footer">
+            <buttton class="btn btn-info ml-5">Buy Now</buttton>
+          </div>
+        </div>
+      </div>
+
+    </div><br><br>
+  </section> 
+
+   <section class="FREQUENTLY">
+
+    <div class="col-lg-12 text-center px-5 py-5">
+      <h1>FREQUENTLY ASKED QUESTIOINS</h1>
+      <hr class="m-auto"><br>
+      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in
+        iste officiis commodi quidem hic quas.</p>
+    </div>
+
+    <div class="container-fluid px-5">
+      <div id="accordion">
+
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+              <h5 class="text-dark"><i class="fa-solid fa-angle-down"></i>&nbsp;Non consectetur a erat nam at lectus
+                urna duis?</h5>
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatibus fuga quidem quisquam eaque
+              cupiditate optio deserunt velit possimus totam. Rerum iste enim sapiente dicta, exercitationem aperiam
+              repellendus unde laborum illo, modi inventore fuga quisquam similique. Enim laudantium quos praesentium.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+              <h5 class="text-dark"><i class="fa-solid fa-angle-down"></i>&nbsp;Feugiat scelerisque varius morbi enim
+                nunc faucibus a pellentesque?</h5>
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+              <h5 class="text-dark"><i class="fa-solid fa-angle-down"></i>&nbsp;Dolor sit amet consectetur adipiscing
+                elit pellentesque habitant morbi?</h5>
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod delectus illum, molestiae unde ea
+              numquam magnam ab pariatur maxime reiciendis quae odio nulla tenetur ipsa commodi cumque explicabo quasi?
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+              <h5 class="text-dark"><i class="fa-solid fa-angle-down"></i>&nbsp;Ac odio tempor orci dapibus. Aliquam
+                eleifend mi in nulla?</h5>
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo minima ipsum facere animi mollitia,
+              nisi minus! Omnis facilis delectus asperiores?
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+              <h5 class="text-dark"><i class="fa-solid fa-angle-down"></i>&nbsp;Tempus quam pellentesque nec nam aliquam
+                sem et tortor consequat?</h5>
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+              <h5 class="text-dark"><i class="fa-solid fa-angle-down"></i>&nbsp; Tortor vitae purus faucibus ornare.
+                Varius vel pharetra vel turpis nunc eget lorem dolor?</h5>
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consequatur nobis dolorum, consectetur,
+              sint blanditiis, tempore amet vero error praesentium dolore modi quis ab ad similique fugiat enim
+              deleniti? Ea.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section> 
+
+  <section class="CONTACT" id="conta">
+
+    <div class="col-lg-12 text-center px-5 py-5">
+      <h1>CONTACT</h1>
+      <hr class="m-auto"><br>
+      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in
+        iste officiis commodi quidem hic quas..</p>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30269.598107896098!2d73.93941885!3d18.497254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13 1!3m3!1m2!1s0x3bc2e9ff81f1aae9%3A0x2560343555ac8b53!2sHadapsar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1658388764399!5m2!1sen!2sin" width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="py-3 px-5" ></iframe><br><br><br>
+
+    <div class="col-lg-12">
+
+      <div class="row px-5">
+        <div class="col-6 bg-danger my-1"><br>
+          <div class="card py-3"><br>
+            <i class="fa-solid fa-location-dot m-auto"></i><br>
+            <h4 class="m-auto">Our Address</h4>
+            <span class="mr-4 m-auto"> A108 Adam Street,Hadapasar, Pune MH. 535022</span><br>
+          </div>
+
+          <div class="row py-4">
+            <div class="col-lg-6">
+              <div class="card"><br>
+                <i class="fa-solid fa-envelope m-auto"></i>
+                <h4 class="m-auto">Email Us</h4>
+                <span class="mr-4 m-auto"> info@example.com <br>
+                  contact@example.com</span><br>
+              </div>
+
+            </div>
+            <div class="col-lg-6">
+              <div class="card"><br>
+                <i class="fa-solid fa-phone-volume m-auto"></i>
+                <h4 class="m-auto">Call Us</h4>
+                <span class="mr-4 m-auto"> +1 5589 55488 55 <br>
+                  +1 6678 254445 41
+                </span><br>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-6">
+
+          <form class="inline-form bg-dark">
+
+            <div class="row mx-1">
+              <div class="col-lg-6">
+                <input type="text" class="form-control mt-3" placeholder="Name">
+              </div>
+
+              <div class="col-lg-6 py-3">
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="col-lg-12 py-2">
+              <input type="text" class="form-control" placeholder="Subject">
+            </div>
+
+            <div class="col-lg-12 py-4">
+              <textarea class="form-control" rows="6" placeholder="Massage"></textarea>
+            </div>
+
+            <div class="text-center">
+              <a href="#" class="btn btn-info">Send Massage</a><br><br>
+            </div>
+
+        </div>
+        </form>
+      </div>
+
+    </div>
+  </section> 
+
+   <section class=""><br><br><br><br><br><br>
+    <div class="container-fluid bg-secondary py-3">
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h3><b>Medicio</b></h3>
+          <p>A108 Adam Street <br> NY 535022, USA</p>
+          <p><b> Phone:</b> +1 5589 55488 55 <br><b>Email:</b> info@example.com</p>
+          <span><i class="fa-brands fa-facebook bg-info"></i>&nbsp;&nbsp;<i
+              class="fa-brands fa-twitter bg-info"></i>&nbsp;&nbsp;<i
+              class="fa-brands fa-instagram bg-info"></i>&nbsp;&nbsp;<i
+              class="fa-brands fa-skype bg-info"></i>&nbsp;&nbsp;<i class="fa-brands fa-linkedin bg-info"></i> </span>
+        </div>
+
+        <div class="col-lg-2">
+          <h5><b>Useful Links</b></h5>
+
+          <div class="py-3">
+            <a href="#" class="text-body">Home</a><br>
+            <a href="#" class="text-body">Service</a><br>
+            <a href="#" class="text-body">About Us</a><br>
+            <a href="#" class="text-body">Term & Service</a><br>
+            <a href="#" class="text-body">Privacy policy</a><br>
+          </div>
+
+        </div>
+
+        <div class="col-lg-2">
+          <h5><b>Our Services</b></h5>
+
+          <div class="py-3">
+            <a href="#" class="text-body">Web Design</a><br>
+            <a href="#" class="text-body">Web Development</a><br>
+            <a href="#" class="text-body">Product Management</a><br>
+            <a href="#" class="text-body">Marketing</a><br>
+            <a href="#" class="text-body">Graphic Design</a><br>
+          </div>
+
+        </div>
+
+        <div class="col-lg-5">
+          <h5><b>Our Newsletter</b></h5>
+          <p>Tamen quem nulla quae legam multos aute sint culpa legam <br> noster magna</p>
+
+          <form action="/action_page.php">
+            <div class="custom-file mb-3">
+              <input type="submit" class="custom-file-input" id="customFile" name="filename">
+              <label class="custom-file-label" for="customFile"></label>
+            </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    </div>
+
+    <footer class="page-footer font-small blue bg-dark">
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="/"> MDBootstrap.com</a><br>
+        <b>Designed by</b>&nbsp; Amit kumar
+      </div>
+    </footer>
+
+  </section>
+
+</body>
+</html>
+
+  
+
+
+
+
